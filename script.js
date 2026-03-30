@@ -39,4 +39,24 @@ form.addEventListener("submit", function(e) {
   if (motivo.length < 10) return erro("Motivo muito curto");
   if (!termo) return erro("Aceite o termo");
 
+  if (moradia === "apartamento" && quintal === "sim") {
+    return erro("Apartamento não pode ter quintal");
+  }
+
+  if (horas > 8) {
+    alert("O animal ficará muito tempo sozinho!");
+  }
+
+  if (pet === "nao") {
+    alert("Você poderá receber acompanhamento da ONG.");
+  }
+
+  if (motivo.toLowerCase().includes("porque sim") || motivo.toLowerCase().includes("quero")) {
+    return erro("Motivo genérico não permitido");
+  }
+
+  if (horas > 12) {
+    return erro("Condições inadequadas para adoção");
+  }
+
 });
