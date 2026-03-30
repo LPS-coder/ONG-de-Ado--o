@@ -56,3 +56,21 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
+
+button:hover {
+  background: #007bff;
+}
+
+.erro {
+  color: red;
+  font-weight: bold;
+}
+
+.sucesso {
+  color: green;
+  font-weight: bold;
+}
+
+#mensagem {
+  margin-top: 15px;
+}
