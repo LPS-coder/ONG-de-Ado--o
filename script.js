@@ -24,5 +24,19 @@ form.addEventListener("submit", function(e) {
     mensagem.innerHTML = <p class="erro">${msg}</p>;
     return true;
   }
-  
+
+  if (nome.length < 3) return erro("Nome inválido");
+  if (!email.includes("@")) return erro("Email inválido");
+  if (telefone.length < 8) return erro("Telefone inválido");
+  if (cpf === "") return erro("CPF obrigatório");
+  if (cpfsExistentes.includes(cpf)) return erro("CPF já cadastrado");
+  if (idade < 18) return erro("Você deve ser maior de idade");
+  if (cidade === "") return erro("Cidade obrigatória");
+  if (moradia === "") return erro("Selecione moradia");
+  if (quintal === "") return erro("Informe sobre quintal");
+  if (pet === "") return erro("Informe se já teve pet");
+  if (isNaN(horas)) return erro("Horas inválidas");
+  if (motivo.length < 10) return erro("Motivo muito curto");
+  if (!termo) return erro("Aceite o termo");
+
 });
