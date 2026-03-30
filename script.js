@@ -59,4 +59,13 @@ form.addEventListener("submit", function(e) {
     return erro("Condições inadequadas para adoção");
   }
 
+   mensagem.innerHTML = `
+    <p class="sucesso">Cadastro realizado com sucesso!</p>
+    <p><b>Nome:</b> ${nome}</p>
+    <p><b>Email:</b> ${email}</p>
+    <p><b>Telefone:</b> ${telefone}</p>
+    <p><b>CPF:</b> ${cpf}</p>
+    <p><b>Idade:</b> ${idade}</p>
+    <p><b>Cidade:</b> ${cidade}</p>
+  `;
 });
