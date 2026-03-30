@@ -35,3 +35,24 @@ input:focus, select:focus, textarea:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(79,172,254,0.5);
 }
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+label {
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4facfe;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
